@@ -5,55 +5,37 @@
     color: white;
 }
 
-body {
-    background: linear-gradient(#FF007F 0%, #00FFFF 33.33%, #3D0075 66.67%, #1A1A1A 100%);
-    height: 100vh;
+
+body{
     width: 100vw;
+    height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
 }
 
-
-body::before {
-    background-image: url("img/ia.webp");
-    background-repeat: repeat;
-    background-position: center;
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    opacity: 0.4;
-}
-
-.container {
+.container{
     width: 100%;
     height: 100%;
-    display: flex;
-    background-image: url("img/Ruido.png");
+    background: url(./img/background.png), rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: 100% 100%;
 }
 
 
-.container__conteudo {
+.container__conteudo{
     display: flex;
     width: 100%;
     height: 100%;
     align-items: center;
-    position: relative;
-    
-}
-
-.container__informacoes {
-    flex: 1;
-    padding: 3rem;
+    justify-content: center;
 }
 
 .container__botao {
-    border-radius: 16px;
+    border-radius: 10px;
     background: #FF007F;
-    padding: 16px 24px;
+    padding: 15px 30px;
     width: 100%;
     font-size: 24px;
     font-weight: 700;
@@ -66,7 +48,7 @@ body::before {
 }
 
 .div__input_buttons{
-    width: 50%;
+    width: 100%;
 }
 
 .container__input {
@@ -114,8 +96,12 @@ button:disabled {
         font-size: 50px;
     }
 
+    .container__conteudo{
+        padding: 0 25px;
+    }
+
     .container__botao {
-        font-size: 20px;
+        font-size: 16px;
         padding: 16px 24px;
     }
 
@@ -128,7 +114,5 @@ button:disabled {
         width: 100%;
     }
 
-    .container__informacoes {
-        padding: 1rem
-    }
+    
 }
